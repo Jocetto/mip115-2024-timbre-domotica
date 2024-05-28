@@ -112,7 +112,7 @@ Para ejecutar en segundo plano nuestros archivos debemos tener Node.js 18
 Instalar Node.js mediante nvm
 
 ```bash
-curl | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
 A continuación instalamos Node.js 18 mediante

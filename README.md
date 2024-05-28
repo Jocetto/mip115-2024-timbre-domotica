@@ -104,7 +104,7 @@ source venv/bin/activate
 instalar en el entorno virtual las dependencias del proyecto mediante:
 
 ```bash
-pip install -r backend/requirements.txt
+pip install -r mip115-2024-timbre-domotica/backend/requirements.txt
 ```
 
 Para ejecutar en segundo plano nuestros archivos debemos tener Node.js 18

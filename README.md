@@ -132,7 +132,7 @@ npm install -g pm2
 Primeramente para mantener el proceso de timbre nos desplazamos al directorio de timbre
 
 ```bash
-cd timbre
+cd mip115-2024-timbre-domotica/timbre
 ```
 
 Podemos probar el timbre localmente mediante:

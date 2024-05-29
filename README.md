@@ -152,7 +152,7 @@ pm2 start ./door_bell.py --name "timbre" --interpreter ../venv/bin/python
 Nos desplazamos al directorio de backend para levantar el servicio que controlará el LED y el servo motor (bisagra de puerta):
 
 ```bash
-cd ../backend
+cd mip115-2024-timbre-domotica/backend
 ```
 
 Aquí ejecutaremos en servicio para que PM2 lo mantenga en segundo plano, por defecto se ejecutará en el puerto 8080, pero se puede cambiar la bandera --port para ejecutarlo en el puerto que considere más conveniente:
@@ -166,7 +166,7 @@ pm2 start "../venv/bin/python -m uvicorn main:app --host 0.0.0.0 --port 8080 --r
 Nos desplazamos para la carpeta frontend para ejecutar la interfaz web:
 
 ```bash
-cd ../frontend
+cd mip115-2024-timbre-domotica/frontend
 ```
 
 Primeramente instalamos toda las dependencias en limpio con

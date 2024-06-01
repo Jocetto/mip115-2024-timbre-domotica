@@ -104,7 +104,7 @@ source venv/bin/activate
 instalar en el entorno virtual las dependencias del proyecto mediante:
 
 ```bash
-pip install -r mip115-2024-timbre-domotica/backend/requirements.txt
+pip install -r backend/requirements.txt
 ```
 
 Para ejecutar en segundo plano nuestros archivos debemos tener Node.js 18
@@ -132,7 +132,7 @@ npm install -g pm2
 Primeramente para mantener el proceso de timbre nos desplazamos al directorio de timbre
 
 ```bash
-cd mip115-2024-timbre-domotica/timbre
+cd timbre
 ```
 
 Podemos probar el timbre localmente mediante:
@@ -152,7 +152,7 @@ pm2 start ./door_bell.py --name "timbre" --interpreter ../venv/bin/python
 Nos desplazamos al directorio de backend para levantar el servicio que controlará el LED y el servo motor (bisagra de puerta):
 
 ```bash
-cd mip115-2024-timbre-domotica/backend
+cd ../backend
 ```
 
 Aquí ejecutaremos en servicio para que PM2 lo mantenga en segundo plano, por defecto se ejecutará en el puerto 8080, pero se puede cambiar la bandera --port para ejecutarlo en el puerto que considere más conveniente:
@@ -166,7 +166,7 @@ pm2 start "../venv/bin/python -m uvicorn main:app --host 0.0.0.0 --port 8080 --r
 Nos desplazamos para la carpeta frontend para ejecutar la interfaz web:
 
 ```bash
-cd mip115-2024-timbre-domotica/frontend
+cd ../frontend
 ```
 
 Primeramente instalamos toda las dependencias en limpio con

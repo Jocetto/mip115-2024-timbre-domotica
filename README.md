@@ -87,6 +87,11 @@ mediante el comando
 ```bash
 git clone https://github.com/Jocetto/mip115-2024-timbre-domotica
 ```
+Abrimos la carpeta raíz del proyecto 
+
+```bash
+cd mip115-2024-timbre-domotica
+```
 
 Desde la carpeta raíz del proyecto se deberá crear el entorno
 virtual de python mediante
@@ -118,7 +123,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 A continuación instalamos Node.js 18 mediante
 
 ```bash
-nvm install --lts
+nvm install 18
 ```
 
 Luego instalamos globalmente la herramienta PM2 para gestionar todos nuetros programas.
@@ -213,3 +218,14 @@ http://<ip_de_raspberry>:3000/
 ```
 
 Y podremos interactuar con la interfaz web para mover el servo motor y encender/apagar el LED.
+
+Para guardar las configuracion de de PM2 escribimos:
+
+```bash
+pm2 save
+```
+PAra iniciar las configuracion guardadas al iniciar la raspberry los recuperamos con:
+
+```bash
+pm2 resurrect
+```
